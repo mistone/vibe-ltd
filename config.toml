@@ -1,0 +1,26 @@
+baseURL = "https://vibeltd.co"
+languageCode = "en-us"
+title = "Vibe LTD - Chocolate, Coffee, and Cannabis Monthly Subscription"
+copyright = " Vibe LTD. All Rights reserved."
+
+[[menu.main]]
+  name = "Frequently Asked Questions"
+  weight = -110
+  identifier = "faq"
+  url = "/faq/"
+
+[[menu.main]]
+  name = "Prelaunch Signup"
+  weight = -110
+  identifier = "prelaunch-signup"
+  url = "/prelaunch-signup/"
+
+[[menu.main]]
+  name = "Thank You Confirmation"
+  weight = -110
+  identifier = "thank-you-confirmation"
+  url = "/thank-you-confirmation/"
+
+[params.meta]
+  keywords = "coffee, cannabis, chocolate, subscription"
+  description = "Personalized Monthly Coffee, Cannabis & Chocolate Subscription"

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<meta name="p:domain_verify" content="d3f33c2fef2e4e82bcfd395624327d38" />
+	<title>Vibe LTD - Chocolate, Coffee, and Cannabis Monthly Subscription</title>
+	
+	<meta name="description" content="{{ .Site.Params.meta.description }}" />
+	<meta name="keywords" content="{{ .Site.Params.meta.keywords }}" />
+
+	<link rel="stylesheet" href={{ "/css/cssv.css"}} />
+	<link rel="stylesheet" href={{ "/css/cssvr.css" | relURL }} />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300, 600, 700" rel="stylesheet">
+
+	<link rel="icon" type="image/png" sizes="16x16" src={{ "./favicon-16x16.png"}}>
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<script>
+		$(document).ready(function () {
+
+
+			$('.accordionButton').click(function () {
+
+
+				$('.accordionButton').removeClass('on');
+
+
+				$('.accordionContent').slideUp('normal');
+
+
+				if ($(this).next().is(':hidden') == true) {
+
+					//ADD THE ON CLASS TO THE BUTTON
+					$(this).addClass('on');
+
+					//OPEN THE SLIDE
+					$(this).next().slideDown('normal');
+				}
+
+			});
+
+
+
+			$('.accordionButton').mouseover(function () {
+				$(this).addClass('over');
+
+
+			}).mouseout(function () {
+				$(this).removeClass('over');
+			});
+
+
+			$('.accordionContent').hide();
+
+		});
+	</script>
+
+	<script>
+		$(document).ready(function () {
+			$('a[rel="relativeanchor"]').click(function () {
+				$('html, body').animate({
+					scrollTop: $($.attr(this, 'href')).offset().top
+				}, 500);
+				return false;
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		! function (e) {
+			if (!window.pintrk) {
+				window.pintrk = function () {
+					window.pintrk.queue.push(Array.prototype.slice.call(arguments))
+				};
+				var n = window.pintrk;
+				n.queue = [], n.version = "3.0";
+				var t = document.createElement("script");
+				t.async = !0, t.src = e;
+				var r = document.getElementsByTagName("script")[0];
+				r.parentNode.insertBefore(t, r)
+			}
+		}("https://s.pinimg.com/ct/core.js");
+
+		pintrk('load', '2617160657516');
+		pintrk('page');
+	</script>
+	<noscript>
+		<img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2617160657516&noscript=1" />
+	</noscript>
+	<script>
+		pintrk('track', 'pagevisit');
+	</script>
+	<noscript>
+		<img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2617160657516&event=pagevisit&noscript=1"
+		/>
+	</noscript>
+</head>
+<body>
