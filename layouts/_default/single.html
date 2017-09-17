@@ -7,4 +7,13 @@
     <div class="introTextD">{{ .Content }}</div>
 </article>
 
+<div class="footerForm">
+	<img class="accordionButton spaceBottom" src={{ "/img/vbutton.jpg" | relURL }}>
+	<div class="accordionContent">
+
+			{{ partial "mailchimp.html" . }}
+
+	</div>
+</div>
+
 {{ partial "footer.html" . }}

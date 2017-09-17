@@ -51,7 +51,6 @@ body {
     letter-spacing:2px;
     padding-left:10%;
     padding-right:10%;
-    margin: 44px auto 0;
 }
 
 .introTextD{
@@ -63,8 +62,8 @@ body {
     font-weight:300;
     line-height:40px;
     margin-top:40px;
-    text-decoration: none;
 }
+
 
 .introTextD2{
 font-family: 'Open Sans', sans-serif;
@@ -393,11 +392,11 @@ margin-bottom:60px;
 
 
 
-.divider{
+/* .divider{
 display:inline;
 margin-left:20px;
 margin-right:20px;
-}
+} */
 
 a.footerLink:link{
 font-family: 'Open Sans', sans-serif;

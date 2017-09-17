@@ -21,7 +21,8 @@ body {
     padding: 0;
     margin: 0;
     font-size: 18px;
-    -webkit-text-size-adjust: none
+    -webkit-text-size-adjust: none;
+    list-style-position: inside;
 }
 
 .header {
