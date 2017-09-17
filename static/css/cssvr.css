@@ -105,7 +105,7 @@ position:static;
 }
 
 .arrow{
-display:none;
+    display: none;
 }
 
 
@@ -437,7 +437,7 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .spaceBottom{
-margin-top:0px;
+    margin-top:0px;
 }
 
 .spaceBottom2{

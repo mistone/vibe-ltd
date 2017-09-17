@@ -9,7 +9,7 @@ letter-spacing:2px;
 font-weight:300;
 line-height:40px;
 margin-top:40px;
-
+text-decoration: none;
 }
 
 .headerTextD {
@@ -19,7 +19,7 @@ margin-top:40px;
     letter-spacing: 2px;
     padding-left: 10%;
     padding-right: 10%;
-    margin: 0 auto;
+    margin: 44px auto 0;
 }
 
 .introTextD2{
@@ -165,14 +165,6 @@ padding-left:10%;
 padding-right:10%;
 position:static;
 }
-
-.arrow{
-display:none;
-}
-
-
-
-
 
 #intro{
 width:100%;
@@ -515,7 +507,7 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .spaceBottom{
-margin-top:0px;
+    margin-top:0px;
 }
 
 .spaceBottom2{

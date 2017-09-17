@@ -72,6 +72,22 @@ body {
     right: 0
 }
 
+.heroText2 {
+    font-size: 45px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: absolute;
+    top: 33%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    display: inline;
+    margin-left: -15%;
+}
+
 .logo {
     width: 127px;
     height: 130px;
@@ -116,7 +132,7 @@ body {
     bottom: 40%;
     left: 0;
     right: 0;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 #intro {
@@ -449,13 +465,13 @@ a.footerLink:hover {
     margin-top: 60px;
     width: 225px;
     height: 73px;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .accordionContent {
     width: 80%;
     text-align: center;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 .startText {
@@ -540,24 +556,9 @@ a.footerLink:hover {
 .footerForm {
     width: 100%;
     margin: 0 auto;
-    text-align: center
+    text-align: center;
 }
 
-.heroText2 {
-    font-size: 45px;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 700;
-    letter-spacing: 2px;
-    padding-left: 10%;
-    padding-right: 10%;
-    position: absolute;
-    top: 33%;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    display: inline;
-    margin-left: -15%
-}
 
 .words {
     display: inline;

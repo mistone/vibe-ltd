@@ -3,11 +3,13 @@ languageCode = "en-us"
 title = "Vibe LTD - Chocolate, Coffee, and Cannabis Monthly Subscription"
 copyright = " Vibe LTD. All Rights reserved."
 
+SectionPagesMenu = "main"
+
 [[menu.main]]
   name = "Frequently Asked Questions"
   weight = -110
-  identifier = "faq"
-  url = "/faq/"
+  identifier = "frequently-asked-questions"
+  url = "/frequently-asked-questions/"
 
 [[menu.main]]
   name = "Prelaunch Signup"
