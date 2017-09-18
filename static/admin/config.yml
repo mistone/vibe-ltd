@@ -11,12 +11,12 @@ public_folder: "img"
 collections:
 - name: "content" 
   label: "Content" 
-  folder: "content/" 
+  folder: "content/site-title.md"
   create: true 
   slug: "{{year}}-{{month}}-{{day}}-{{slug}}" 
   fields: 
     - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Title", name: "site-title", widget: "string"}
     - {label: "Publish Date", name: "date", widget: "datetime"}
     - {label: "Featured Image", name: "thumbnail", widget: "image"}
     - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
