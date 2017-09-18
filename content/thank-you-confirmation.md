@@ -7,14 +7,12 @@ showthedate = false
 
 ### **Whats next?**
 
-* We will be in touch very soon about reserving your Provision.
+We will be in touch very soon about reserving your Provision.
 
-* Provisions cost $69 (free shipping) and ship monthly.
+Provisions cost $69 (free shipping) and ship monthly.
 
-* Provisions will feature new products each month, all sourced for amazing quality and exceptional flavor.
+Provisions will feature new products each month, all sourced for amazing quality and exceptional flavor.
 
-* Vibe is currently only serving residents of California.
+If you have any questions or feedback please send us an email to hello@vibeltd.co or tweet us : [@vibeltd](www.twitter.com/vibeltd)
 
-* If you have any questions or feedback please send us an email to hello@vibeltd.co or tweet us : [@vibeltd](www.twitter.com/vibeltd)
-
-* Thanks so much!
+Thanks so much!
