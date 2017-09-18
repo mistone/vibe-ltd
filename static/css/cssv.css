@@ -182,8 +182,8 @@ body {
 
 .introText {
     font-family: 'Open Sans', sans-serif;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
     font-size: 20px;
     letter-spacing: 2px;
     font-weight: 300;
@@ -507,7 +507,7 @@ a.footerLink:hover {
 }
 
 .accordionContent {
-    width: 80%;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
 }
