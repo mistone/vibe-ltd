@@ -1,11 +1,11 @@
-{{ partial "head2.html" . }}
+{{ partial "head.html" . }}
 
 {{ partial "header.html" . }}
 
-<article class="heroD">
-    <h1 class="headerTextD">{{ .Title }}</h1>
+<div class="heroD">
+    <div class="headerTextD">{{ .Title }}</div>
     <div class="introTextD">{{ .Content }}</div>
-</article>
+</div>
 
 <div class="footerForm">
 	<img class="accordionButton spaceBottom" src={{ "/img/vbutton.jpg" | relURL }}>

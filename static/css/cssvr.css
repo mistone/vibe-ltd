@@ -1,17 +1,59 @@
 @media only screen and (max-width: 950px) {
 
-
-.textWrap{
-
-padding-left:10%;
-padding-right:10%;
-width:100%;
-margin:0 auto;
-text-align:left;
-padding-bottom:50px;
+.introTextD{
+    font-family: 'Open Sans', sans-serif;
+    padding-left:20%;
+    padding-right:20%;
+    font-size:13px;
+    letter-spacing:2px;
+    font-weight:300;
+    line-height:40px;
+    margin-top:40px;
+    text-decoration: none;
 }
 
+.headerTextD {
+    font-size: 45px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 45px auto 0;
+}
 
+.heroD{
+    width: 100%;
+    background-color: #f2f2f2;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    width:100%;
+    text-align: center;
+    vertical-align: middle;
+    background-image: url(/img/vherobg.jpg);
+    background-size: cover;
+    background-size: cover;
+    margin-top: -214px;
+    padding-bottom: 100px;
+    z-index: 99999;
+    padding-top: 184px;
+}
+
+.textWrap{
+    padding-left:10%;
+    padding-right:10%;
+    width:100%;
+    margin:0 auto;
+    text-align:left;
+    padding-bottom:50px;
+}
+
+.footerForm {
+    width: 100%;
+    margin: 60px auto 0;
+    text-align: center;
+}
 
 .words{
 display:inline;
@@ -132,7 +174,7 @@ text-align:left;
 padding-left:0px;
 padding-right:60px;
 padding-bottom:60px;
-background:url(/images/vbackground.jp);
+background:url(/img/vbackground.jp);
 background-position:right;
 background-repeat:no-repeat;
 background-size:contain;
@@ -187,7 +229,7 @@ margin-bottom:20px;
     text-align:left;
     background-color:rgba(241, 241, 241, 0.95);
     border-right:0px solid #fff;
-    background-image:url(/images/vline.jpg);
+    background-image:url(/img/vline.jpg);
     background-position:bottom;
     background-repeat:repeat-x;
 }
@@ -204,7 +246,7 @@ border-right:0px solid #fff;
     vertical-align: top;
     text-align:left;
         background-color:rgba(241, 241, 241, 0.95);
-    background-image:url(/images/vline.jpg);
+    background-image:url(/img/vline.jpg);
     background-position:bottom;
     background-repeat:repeat-x;
     margin-top:60px;
@@ -223,7 +265,7 @@ border-right:0px solid #fff;
     text-align:left;
     border-left:0px solid #fff;
         background-color:rgba(241, 241, 241, 0.95);
-            background-image:url(/images/vline.jpg);
+            background-image:url(/img/vline.jpg);
     background-position:bottom;
     background-repeat:repeat-x;
 }
@@ -326,7 +368,6 @@ margin-bottom:60px;
 }
 
 
-
 .divider{
 display:inline;
 margin-left:20px;
@@ -369,8 +410,7 @@ font-weight:300;
 
 
 .footer{
-margin-top:0px;
-margin-bottom:0px;
+margin-top: 60px auto;
 }
 
 
