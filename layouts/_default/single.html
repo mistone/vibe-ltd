@@ -1,4 +1,8 @@
-{{ partial "head.html" . }}
+{{ if eq $.Params.title "Thank You, You're Confirmed in the Vibe Beta" }}
+    {{ partial "head2.html" . }}
+{{ else }}
+    {{ partial "head.html" . }}
+{{ end }}
 
 {{ partial "header.html" . }}
 
