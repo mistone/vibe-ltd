@@ -156,3 +156,4 @@ Vibe LTD
 Santa Monica, CA 90404
 (415) 323-6766
 service@vibeltd.com
+</div>
