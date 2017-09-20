@@ -38,7 +38,7 @@ body {
   
   .headerCol2 {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
     margin: 40px 0;
@@ -56,7 +56,7 @@ body {
     vertical-align: middle;
     background-image: url(/img/vherobg.jpg);
     background-size: cover;
-    margin-top: -214px
+    margin-top: -240px
 }
 
 .heroText {
@@ -92,10 +92,6 @@ body {
 .logo {
     width: 127px;
     height: 130px;
-  }
-  
-  .social-header {
-      margin-top: 20px;
   }
   
   .blog {
@@ -148,7 +144,7 @@ body {
     background-image: url(/img/vherobg.jpg);
     background-size: cover;
     background-size: cover;
-    margin-top: -214px;
+    margin-top: -240px;
     padding-bottom: 125px;
     z-index: 99999;
     padding-top: 247px;
@@ -372,24 +368,53 @@ body {
 }
 
 .footer {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 40px;
     width: 70%;
-    margin: 0 auto;
+    margin: 0;
     text-align: center;
-    padding-top: 60px;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 60px;
+    padding: 60px;
     background-color: #f1f1f1;
-    margin-top: 60px;
-    margin-bottom: 60px
+    margin: 60px auto 30px;
 }
 
 .footerLogo {
     width: 98px;
     height: 100px;
-    margin-bottom: 60px;
+}
+
+.netlify-identity-menu {
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+.netlify-identity-item {
+    list-style-type: none;
+  }
+
+.netlify-identity-signup {
+    text-decoration: none;
+    color: black;
+    margin: 0;
+}
+
+.netlify-identity-signup:after {
+    content: "/";
+    margin-left: 2px;
+ }
+
+.netlify-identity-login {
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    margin-left: 2px;
 }
 
 .divider {
@@ -398,9 +423,8 @@ body {
     margin-right: 20px;
 }
 
-
 a.footerLink:link {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 15px;
     letter-spacing: 2px;
     font-weight: 700;
@@ -410,7 +434,7 @@ a.footerLink:link {
 }
 
 a.footerLink:visited {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 15px;
     letter-spacing: 2px;
     font-weight: 700;
@@ -425,15 +449,10 @@ a.footerLink:hover {
 }
 
 .copyright {
-    margin-top: 60px;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     letter-spacing: 2px;
     font-weight: 300;
-}
-
-.social-footer {
-    margin-top: 60px;
 }
 
 .fb2 {
