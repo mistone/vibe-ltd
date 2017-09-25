@@ -864,7 +864,7 @@ animation-delay: 8s;
 
 .accountBody {
     font-family: 'Open Sans', sans-serif;
-    padding: 0 5%;
+    padding: 0 10%;
     font-size: 16px;
     letter-spacing: 2px;
     font-weight: 300;
@@ -894,14 +894,14 @@ animation-delay: 8s;
     margin: 60px auto 0;
     display: grid;
     grid-template-columns: 0.5fr 1fr;
-    grid-column-gap: 50px;
+    grid-column-gap: 40px;
 }
 
 .subscription {
     margin: 60px auto 60px;
     display: grid;
     grid-template-columns: 0.5fr 1fr;
-    grid-column-gap: 60px;
+    grid-column-gap: 40px;
 }
 
 .sidebar {
@@ -915,9 +915,10 @@ animation-delay: 8s;
 }
 
 .subForm {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 0.5fr;
+    grid-row-gap: 10px;
 }
 
 .subForm p {

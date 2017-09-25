@@ -4,11 +4,14 @@
     {{ partial "head.html" . }}
 {{ end }}
 
-{{ partial "header.html" . }}
-
-<div class="heroD">
-    <div class="headerTextD">{{ .Title }}</div>
-    <div class="introTextD">{{ .Content }}</div>
-</div>
+{{ if eq $.Params.title "" }}
+    {{ partial "account.html" . }}
+{{ else }}
+    {{ partial "header.html" . }}
+    <div class="heroD">
+        <div class="headerTextD">{{ .Title }}</div>
+        <div class="introTextD">{{ .Content }}</div>
+    </div>
+{{ end }}
 
 {{ partial "footer.html" . }}
