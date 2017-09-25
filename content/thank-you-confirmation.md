@@ -9,7 +9,7 @@ showthedate = false
 
 We will be in touch very soon about reserving your Provision.
 
-Provisions cost $69 (free shipping) and ship monthly.
+Provisions cost $69 (includes shipping) and ship ever month.
 
 Provisions will feature new products each month, all sourced for amazing quality and exceptional flavor.
 
