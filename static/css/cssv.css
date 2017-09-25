@@ -861,3 +861,147 @@ animation-delay: 8s;
     z-index: -1;
 }
 }  */
+
+.accountBody {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 5%;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+/*
+::-webkit-input-placeholder {
+    color: #E0E0E0;
+}
+::-moz-placeholder {
+    color: #E0E0E0;
+}
+:-ms-input-placeholder {
+    color: #E0E0E0;
+}
+:-moz-placeholder {
+    color: #E0E0E0;
+} */
+
+.account {
+    margin: 60px auto 0;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-column-gap: 50px;
+}
+
+.subscription {
+    margin: 60px auto 60px;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-column-gap: 60px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.subForm {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.subForm p {
+    margin: 0;
+}
+
+.subForm input {
+    margin-bottom: 20px;
+}
+
+.subOptions {
+    margin: 60px 0 30px;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+    grid-column-gap: 60px;
+}
+
+.subButton {
+    border: none;
+    border: 1px solid #E0E0E0;
+    background: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.subButton {
+    padding: 10px 2 0px;
+}
+
+.promo {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 0.5fr;
+    grid-row-gap: 10px;
+}
+
+.promo p {
+    margin: 0;
+}    
+
+.ship {
+    margin: 30px 0 0;
+    display: grid;
+    grid-template-columns: 0.5fr;
+    grid-row-gap: 10px;
+}
+
+.ship p {
+    margin: 0;
+} 
+
+.bill {
+    margin: 30px 0 0;
+    display: grid;
+    grid-template-columns: 0.5fr;
+    grid-row-gap: 10px;
+}
+
+.bill p {
+    margin: 0;
+} 
+
+.pay {
+    margin: 30px 0 0;
+    display: grid;
+    grid-template-columns: 0.5fr;
+    grid-row-gap: 10px;
+}
+
+.pay p {
+    margin: 0;
+} 
+
+.update {
+    display: flex;
+    justify-content: center;
+}
+
+.finalButton {
+    margin: 0 50px;
+    padding: 15px 30px;
+    background: #404040;
+    color: #E0E0E0;
+}

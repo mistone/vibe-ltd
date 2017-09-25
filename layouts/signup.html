@@ -1,0 +1,93 @@
+{{ partial "head.html" . }}
+
+<div class="header">
+    
+    <div class="headerCol1">
+        <a href="/"><img class="logo" src={{ "/img/vlogo.png" | relURL }}></a>
+    </div>
+    
+    <div class="headerCol2">
+        <a href="https://blog.vibeltd.co/" class="blog">Logout</a><br>
+    </div>
+    
+</div>
+
+<div class="accountBody">
+    <div class="account">
+        <div class="sidebar">
+            <h2>Account</h2>
+            <p>Your Vibe ID is used to login.</p>
+        </div>
+        
+        <form action="/" method="post" class="subForm">
+            <p>Name</p>
+            <input type="text" placeholder="Jane Doe" required class="input">
+
+            <p>Email</p>
+            <input type="text" placeholder="example@email.com" required class="input">
+        </form>
+    </div>
+
+    <div class="subscription">
+        <div class="sidebar">
+            <h2>Subscription & Billing</h2>
+            <p>Manage your Vibe subscription and payment method.</p>
+        </div>
+
+        <div class="subForm">
+
+            <form action="/" method="post" class="accountInfo">
+                <div class="promo">
+                    <p>Promo Code</p>
+                    <input type="text" placeholder="Enter Promo Code" required class="input">
+                </div>
+                
+                <div class="ship">
+                    <p>Delivery Address</p>
+                    <input type="text" placeholder="1234 Pleasent St" required class="input">
+                    <input type="text" placeholder="Apt. 1" required class="input">
+                    <input type="text" placeholder="San Francisco" required class="input">
+                    <input type="text" placeholder="CA" required class="input">
+                    <input type="text" placeholder="12345" required class="input">
+                </div>
+                
+                <div class="bill">
+                    <p>Billing Address</p>
+                    <input type="text" placeholder="1234 Pleasent St" required class="input">
+                    <input type="text" placeholder="Apt. 1" required class="input">
+                    <input type="text" placeholder="San Francisco" required class="input">
+                    <input type="text" placeholder="CA" required class="input">
+                    <input type="text" placeholder="12345" required class="input">
+                </div>
+
+                <div class="pay">
+                    <p>Payment Method</p>
+                    <input type="text" placeholder="First & Last Name" required class="input">
+                    <input type="text" placeholder="4012 8888 8888 1881" required class="input">
+                    <input type="text" placeholder="12/20" required class="input">
+                    <input type="text" placeholder="123" required class="input">
+                </div>
+            </form>
+
+            <div class="subOptions">
+                <button class="subButton">
+                    <p class="left">Activate Subscription</p>
+                </button>
+
+                <button class="subButton">
+                    <p class="left">Pause Subscription</p>
+                </button>
+            </div>
+        </div>    
+
+    </div>
+
+    <div class="update">
+        <button type="submit" class="finalButton">Cancel</button>
+        <button type="submit" class="finalButton">Update</button>
+    </div>
+
+
+</div>
+
+{{ partial "footer.html" . }}
