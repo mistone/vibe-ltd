@@ -74,8 +74,9 @@
 		});
 	</script>
 
-	{{ partial "pixel.html" . }}
+	{{ partial "FBPageViewLead.html" . }}
 
+	<!-- Pintrest -->
 	<script type="text/javascript">
 		! function (e) {
 			if (!window.pintrk) {
@@ -107,6 +108,26 @@
 		<img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2617160657516&event=pagevisit&noscript=1"
 		/>
 	</noscript>
+
+	<script>
+		pintrk('track', 'signup');
+	</script>
+		
+	<noscript>
+		<img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2617160657516&event=signup&noscript=1"/>
+	</noscript>
+
+	<!-- Taboola -->
+	<script type="text/javascript">
+		window._tfa = window._tfa || [];
+		_tfa.push({
+			notify: 'action',
+			name: 'SignUp'
+		});
+	</script>
+	<script src="//cdn.taboola.com/libtrc/taboolaaccount-hlvibeltdco/tfa.js"></script>
+
 </head>
 
 <body>
+	
