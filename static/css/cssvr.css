@@ -1,5 +1,6 @@
 @media only screen and (max-width: 950px) {
 
+
 .introTextD{
     font-family: 'Open Sans', sans-serif;
     padding-left:20%;
@@ -478,6 +479,66 @@ margin-top:60px;
 
 @media only screen and (max-width: 650px) {
 
+    .account {
+        margin: 60px 20px 0;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid red;
+    }
+
+    .subscription {
+        margin: 60px 20px 60px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 50px;
+    }
+
+    .subOptions {
+        margin: 60px 0 30px;
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-column-gap: 60px;
+    }
+
+    .promo {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+    }    
+
+    .ship {
+        margin: 30px 0 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+    }
+
+    .bill {
+        margin: 30px 0 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+    }
+
+    .pay {
+        margin: 30px 0 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+    }
+
+    .update {
+        display: flex;
+        justify-content: center;
+    }
+
+    .finalButton {
+        margin: 0 50px;
+        padding: 15px 30px;
+        background: #404040;
+        color: #E0E0E0;
+    }
 
 #form{
 font-family: 'Open Sans', sans-serif;
