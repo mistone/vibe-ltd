@@ -974,14 +974,6 @@ form p {
     max-width: 60%;
 }
 
-/* .subForm form p {
-    margin: 0;
-}
-
-.subForm form input {
-    margin-bottom: 20px;
-} */
-
 .promo {
     margin: 0 0 30px;
     display: flex;
@@ -1078,10 +1070,7 @@ form p {
     letter-spacing: 2px;
     font-weight: 600;
     line-height: 25px;
-}
-
-.subButton {
-    padding: 10px 2 0px;
+    padding: 10px 20px;
 }
 
 .update {
