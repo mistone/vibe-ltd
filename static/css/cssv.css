@@ -862,6 +862,39 @@ animation-delay: 8s;
 }
 }  */
 
+.headerAccount {
+    padding: 0 10%;
+    margin: 20px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+  }
+  
+.header1 {
+    margin: 40px 0;
+}
+  
+.header2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 40px 0;
+  }
+
+.logo1 {
+    width: 127px;
+    height: 130px;
+  }
+
+.logout {
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: black;
+}
+
 .accountBody {
     font-family: 'Open Sans', sans-serif;
     padding: 0 10%;
@@ -872,33 +905,31 @@ animation-delay: 8s;
 }
 
 .input {
+    font-size: 14px;
+    padding-bottom: 5px;
     border: none;
     border-bottom: 1px solid #E0E0E0;
 }
 
-/*
+form p {
+    color: #606060;
+}
+
 ::-webkit-input-placeholder {
-    color: #E0E0E0;
+    color: #A0A0A0;
 }
 ::-moz-placeholder {
-    color: #E0E0E0;
+    color: #A0A0A0;
 }
 :-ms-input-placeholder {
-    color: #E0E0E0;
+    color: #A0A0A0;
 }
 :-moz-placeholder {
-    color: #E0E0E0;
-} */
+    color: #A0A0A0;
+}
 
 .account {
     margin: 60px auto 0;
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    grid-column-gap: 40px;
-}
-
-.subscription {
-    margin: 60px auto 60px;
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     grid-column-gap: 40px;
@@ -914,19 +945,121 @@ animation-delay: 8s;
     margin-top: 0;
 }
 
+.accountForm {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+}
+
+.accountForm p {
+    margin: 0 0 10px;
+}
+
+.accountForm input {
+    margin-bottom: 20px;
+}
+
+.subscription {
+    margin: 60px auto 60px;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-column-gap: 40px;
+}
+
 .subForm {
     margin: 0;
-    display: grid;
-    grid-template-columns: 0.5fr;
-    grid-row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
 }
 
-.subForm p {
+/* .subForm form p {
     margin: 0;
 }
 
-.subForm input {
+.subForm form input {
     margin-bottom: 20px;
+} */
+
+.promo {
+    margin: 0 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.promo p {
+    margin: 0 0 10px;
+    font-weight: 800;
+    color: black;
+}
+
+.promo input {
+    margin-bottom: 20px;
+}
+
+.ship {
+    margin: 0 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ship h4 {
+    margin-top: 0;
+}
+
+.ship p {
+    margin: 0 0 10px;
+}
+
+.ship input {
+    margin-bottom: 20px;
+}
+
+.ship span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bill {
+    margin: 0 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bill p {
+    margin: 0 0 10px;
+}
+
+.bill input {
+    margin-bottom: 20px;
+}
+
+.bill span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pay {
+    margin: 0 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pay p {
+    margin: 0 0 10px;
+}
+
+.pay input {
+    margin-bottom: 20px;
+}
+
+.pay span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .subOptions {
@@ -951,57 +1084,16 @@ animation-delay: 8s;
     padding: 10px 2 0px;
 }
 
-.promo {
-    margin: 0;
-    display: grid;
-    grid-template-columns: 0.5fr;
-    grid-row-gap: 10px;
-}
-
-.promo p {
-    margin: 0;
-}    
-
-.ship {
-    margin: 30px 0 0;
-    display: grid;
-    grid-template-columns: 0.5fr;
-    grid-row-gap: 10px;
-}
-
-.ship p {
-    margin: 0;
-} 
-
-.bill {
-    margin: 30px 0 0;
-    display: grid;
-    grid-template-columns: 0.5fr;
-    grid-row-gap: 10px;
-}
-
-.bill p {
-    margin: 0;
-} 
-
-.pay {
-    margin: 30px 0 0;
-    display: grid;
-    grid-template-columns: 0.5fr;
-    grid-row-gap: 10px;
-}
-
-.pay p {
-    margin: 0;
-} 
-
 .update {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: flex-start; */
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 2fr;
+    grid-column-gap: 10px;
 }
 
 .finalButton {
-    margin: 0 50px;
+    margin: 0;
     padding: 15px 30px;
     background: #404040;
     color: #E0E0E0;

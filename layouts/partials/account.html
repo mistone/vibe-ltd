@@ -1,13 +1,13 @@
 {{ partial "head.html" . }}
 
-<div class="header">
+<div class="headerAccount">
     
-    <div class="headerCol1">
-        <a href="/"><img class="logo" src={{ "/img/vlogo.png" | relURL }}></a>
+    <div class="header1">
+        <a href="/"><img class="logo1" src={{ "/img/vlogo.png" | relURL }}></a>
     </div>
     
-    <div class="headerCol2">
-        <a href="https://blog.vibeltd.co/" class="blog">Logout</a><br>
+    <div class="header2">
+        <a href="https://blog.vibeltd.co/" class="logout">Logout</a><br>
     </div>
     
 </div>
@@ -18,14 +18,14 @@
             <h2>Account</h2>
             <p>Your Vibe ID is used to login.</p>
         </div>
-        
-        <form action="/" method="post" class="subForm">
+
+        <form class="accountForm" action="/" method="post" >
             <p>Name</p>
             <input type="text" placeholder="Jane Doe" required class="input">
-
             <p>Email</p>
             <input type="text" placeholder="example@email.com" required class="input">
-        </form>
+        </form>    
+        
     </div>
 
     <div class="subscription">
@@ -34,39 +34,69 @@
             <p>Manage your Vibe subscription and payment method.</p>
         </div>
 
+
         <div class="subForm">
+            <form class="ship" action="/" method="post" >
+                <h4>Delivery Address</h4>
+                <p>Address Line 1</p>
+                <input type="text" placeholder="1234 Pleasent St" required class="input">
+                <p>Address Line 2</p>
+                <input type="text" placeholder="Apt. 1" required class="input">
+                <p>City</p>
+                <input type="text" placeholder="San Francisco" required class="input">
+                <span>
+                    <div>
+                        <p>State</p>
+                        <input type="text" placeholder="CA" required class="input">
+                    </div>
+                    <div>
+                        <p>Zip Code</p>
+                        <input type="text" placeholder="12345" required class="input">
+                    </div>
+                </span>
+            </form>
 
-            <form action="/" method="post" class="accountInfo">
-                <div class="promo">
-                    <p>Promo Code</p>
-                    <input type="text" placeholder="Enter Promo Code" required class="input">
-                </div>
-                
-                <div class="ship">
-                    <p>Delivery Address</p>
-                    <input type="text" placeholder="1234 Pleasent St" required class="input">
-                    <input type="text" placeholder="Apt. 1" required class="input">
-                    <input type="text" placeholder="San Francisco" required class="input">
-                    <input type="text" placeholder="CA" required class="input">
-                    <input type="text" placeholder="12345" required class="input">
-                </div>
-                
-                <div class="bill">
-                    <p>Billing Address</p>
-                    <input type="text" placeholder="1234 Pleasent St" required class="input">
-                    <input type="text" placeholder="Apt. 1" required class="input">
-                    <input type="text" placeholder="San Francisco" required class="input">
-                    <input type="text" placeholder="CA" required class="input">
-                    <input type="text" placeholder="12345" required class="input">
-                </div>
+            <form class="bill" action="/" method="post" >
+                <h4>Billing Address</h4>
+                <p>Address Line 1</p>
+                <input type="text" placeholder="1234 Pleasent St" required class="input">
+                <p>Address Line 2</p>
+                <input type="text" placeholder="Apt. 1" required class="input">
+                <p>City</p>
+                <input type="text" placeholder="San Francisco" required class="input">
+                <span>
+                    <div>
+                        <p>State</p>
+                <input type="text" placeholder="CA" required class="input">
+                    </div>
+                    <div>
+                        <p>Zip Code</p>
+                <input type="text" placeholder="12345" required class="input">
+                    </div>
+                </span>
+            </form>
 
-                <div class="pay">
-                    <p>Payment Method</p>
-                    <input type="text" placeholder="First & Last Name" required class="input">
-                    <input type="text" placeholder="4012 8888 8888 1881" required class="input">
-                    <input type="text" placeholder="12/20" required class="input">
-                    <input type="text" placeholder="123" required class="input">
-                </div>
+            <form class="pay" action="/" method="post" >
+                <h4>Payment Method</h4>
+                <p>Full Name</p>
+                <input type="text" placeholder="First & Last Name" required class="input">
+                <p>Card Number</p>
+                <input type="text" placeholder="4012 8888 8888 1881" required class="input">
+                <span>
+                    <div>
+                        <p>Expiration Date</p>
+                        <input type="text" placeholder="12/20" required class="input">
+                    </div>
+                    <div>
+                        <p>Security Code</p>
+                        <input type="text" placeholder="123" required class="input">
+                    </div>
+                </span>
+            </form>
+
+            <form  class="promo" action="/" method="post" >
+                <p>Promo Code</p>
+                <input type="text" placeholder="Enter Promo Code" required class="input">
             </form>
 
             <div class="subOptions">
@@ -78,9 +108,14 @@
                     <p class="left">Pause Subscription</p>
                 </button>
             </div>
+
         </div>    
 
     </div>
+
+    </form>
+    
+   
 
     <div class="update">
         <button type="submit" class="finalButton">Cancel</button>
