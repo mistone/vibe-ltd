@@ -5,6 +5,8 @@
     </div>
     
     <div class="headerCol2">
+        <a href="" class="blog" ng-click="login()" ng-if="!auth.uid">Login</a>
+        <a href="" class="blog" ng-click="login()" ng-if="auth.uid">My Account</a>
         <a href="https://blog.vibeltd.co/" class="blog">Vibe Blog</a><br>
         <div class="social-header">
             <a href="http://www.facebook.com/vibeltd"><img class="fb" src={{ "/img/vfb.png" | relURL }}></a>

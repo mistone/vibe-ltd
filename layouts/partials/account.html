@@ -1,16 +1,16 @@
 {{ partial "head.html" . }}
 
 <div class="headerAccount">
-    
+
     <div class="header1">
         <a href="/"><img class="logo1" src={{ "/img/vlogo.png" | relURL }}></a>
     </div>
-    
+
     <div class="header2">
-        <a href="https://blog.vibeltd.co/" class="logout">Logout</a><br>
+        <a class="logout" ng-click="logout()">Logout</a><br>
     </div>
-    
-</div>
+
+</div> 
 
 <div class="accountBody">
     <div class="account">
@@ -19,13 +19,13 @@
             <p>Your Vibe ID is used to login.</p>
         </div>
 
-        <form class="accountForm" action="/" method="post" >
+        <ng-form class="accountForm">
             <p>Name</p>
-            <input type="text" placeholder="Jane Doe" required class="input">
+            <input type="text" placeholder="Jane Doe" required class="input" ng-model="user.name">
             <p>Email</p>
-            <input type="text" placeholder="example@email.com" required class="input">
-        </form>    
-        
+            <input type="text" placeholder="example@email.com" required class="input" ng-model="user.email">
+        </ng-form>
+
     </div>
 
     <div class="subscription">
@@ -36,53 +36,53 @@
 
 
         <div class="subForm">
-            <form class="ship" action="/" method="post" >
+            <ng-form class="ship">
                 <h4>Delivery Address</h4>
                 <p>Address Line 1</p>
-                <input type="text" placeholder="1234 Pleasent St" required class="input">
+                <input type="text" placeholder="1234 Pleasent St" required class="input" ng-model="user.delivery.address[0]">
                 <p>Address Line 2</p>
-                <input type="text" placeholder="Apt. 1" required class="input">
+                <input type="text" placeholder="Apt. 1" required class="input" ng-model="user.delivery.address[1]">
                 <p>City</p>
-                <input type="text" placeholder="San Francisco" required class="input">
+                <input type="text" placeholder="San Francisco" required class="input" ng-model="user.delivery.city">
                 <span>
                     <div>
                         <p>State</p>
-                        <input type="text" placeholder="CA" required class="input">
+                        <input type="text" placeholder="CA" required class="input" ng-model="user.delivery.state">
                     </div>
                     <div>
                         <p>Zip Code</p>
-                        <input type="text" placeholder="12345" required class="input">
+                        <input type="text" placeholder="12345" required class="input" ng-model="user.delivery.zipcode">
                     </div>
                 </span>
-            </form>
+                </form>
 
-            <form class="bill" action="/" method="post" >
-                <h4>Billing Address</h4>
-                <p>Address Line 1</p>
-                <input type="text" placeholder="1234 Pleasent St" required class="input">
-                <p>Address Line 2</p>
-                <input type="text" placeholder="Apt. 1" required class="input">
-                <p>City</p>
-                <input type="text" placeholder="San Francisco" required class="input">
-                <span>
-                    <div>
-                        <p>State</p>
-                        <input type="text" placeholder="CA" required class="input">
-                    </div>
-                    <div>
-                        <p>Zip Code</p>
-                        <input type="text" placeholder="12345" required class="input">
-                    </div>
-                </span>
-            </form>
+                <ng-form>
+                    <h4>Billing Address</h4>
+                    <p>Address Line 1</p>
+                    <input type="text" placeholder="1234 Pleasent St" required class="input" ng-model="user.billing.address[0]">
+                    <p>Address Line 2</p>
+                    <input type="text" placeholder="Apt. 1" required class="input" ng-model="user.billing.address[1]">
+                    <p>City</p>
+                    <input type="text" placeholder="San Francisco" required class="input" ng-model="user.billing.city">
+                    <span>
+                        <div>
+                            <p>State</p>
+                            <input type="text" placeholder="CA" required class="input" ng-model="user.billing.state">
+                        </div>
+                        <div>
+                            <p>Zip Code</p>
+                            <input type="text" placeholder="12345" required class="input" ng-model="user.billing.zipcode">
+                        </div>
+                    </span>
+                </ng-form>
 
-            <form class="pay" action="/" method="post" >
-                <h4>Payment Method</h4>
-                <p>Full Name</p>
-                <input type="text" placeholder="First & Last Name" required class="input">
-                <p>Card Number</p>
-                <input type="text" placeholder="4012 8888 8888 1881" required class="input">
-                <span>
+                <form class="pay" action="/" method="post">
+                    <h4>Payment Method</h4>
+                    <p>Full Name</p>
+                    <input type="text" placeholder="First & Last Name" required class="input">
+                    <p>Card Number</p>
+                    <input type="text" placeholder="4012 8888 8888 1881" required class="input">
+                    <span>
                     <div>
                         <p>Expiration Date</p>
                         <input type="text" placeholder="12/20" required class="input">
@@ -91,36 +91,31 @@
                         <p>Security Code</p>
                         <input type="text" placeholder="123" required class="input">
                     </div>
-                </span>
-            </form>
+                    </span>
+                </form>
 
-            <form  class="promo" action="/" method="post" >
-                <p>Promo Code</p>
-                <input type="text" placeholder="Enter Promo Code" required class="input">
-            </form>
+                <ng-form>
+                    <p>Promo Code</p>
+                    <input type="text" placeholder="Enter Promo Code" required class="input" ng-model="user.promoCode">
+                </ng-form>
 
-            <div class="subOptions">
-                <button class="subButton">
+                <div class="subOptions">
+                    <button class="subButton" ng-if="!user.subscription" ng-click="user.subscription=true">
                     <p class="left">Activate Subscription</p>
                 </button>
 
-                <button class="subButton">
-                    <p class="left">Pause Subscription</p>
+                <button class="subButton" ng-if="user.subscription" ng-click="user.subscription=false">
+                <p class="left">Pause Subscription</p>
                 </button>
-            </div>
+                </div>
 
-        </div>    
+        </div>
 
     </div>
-
-    </form>
-    
-   
 
     <div class="update">
-        <button type="submit" class="finalButton">Cancel</button>
-        <button type="submit" class="finalButton">Update</button>
+        <button class="finalButton" ng-click="cancel()">Cancel</button>
+        <button class="finalButton" ng-click="save()">Update</button>
     </div>
-
 
 </div>
