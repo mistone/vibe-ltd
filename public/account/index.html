@@ -1,0 +1,410 @@
+
+    <!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<meta name="p:domain_verify" content="d3f33c2fef2e4e82bcfd395624327d38" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="Personalized Monthly Coffee, Cannabis &amp; Chocolate Subscription" />
+	<meta name="keywords" content="coffee, cannabis, chocolate, subscription" />
+
+	<title>Vibe LTD - Chocolate, Coffee, and Cannabis Monthly Subscription</title>
+
+	<link rel="stylesheet" href=/css/cssv.css />
+	<link rel="stylesheet" href=/css/cssvr.css />
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300, 600, 700" rel="stylesheet">
+
+	<link rel="icon" type="image/png" sizes="16x16" src=/img/favicon-16x16.png>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script defer type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+	<script>
+		$(document).ready(function() {
+
+
+			$('.accordionButton').click(function() {
+
+
+				$('.accordionButton').removeClass('on');
+
+
+				$('.accordionContent').slideUp('normal');
+
+
+				if ($(this).next().is(':hidden') == true) {
+
+					
+					$(this).addClass('on');
+
+					
+					$(this).next().slideDown('normal');
+				}
+
+			});
+
+
+
+			$('.accordionButton').mouseover(function() {
+				$(this).addClass('over');
+
+
+			}).mouseout(function() {
+				$(this).removeClass('over');
+			});
+
+
+			$('.accordionContent').hide();
+
+		});
+	</script>
+
+	<script>
+		$(document).ready(function() {
+			$('a[rel="relativeanchor"]').click(function() {
+				$('html, body').animate({
+					scrollTop: $($.attr(this, 'href')).offset().top
+				}, 500);
+				return false;
+			});
+		});
+	</script>
+
+	<script type="text/javascript">
+		! function(e) {
+			if (!window.pintrk) {
+				window.pintrk = function() {
+					window.pintrk.queue.push(Array.prototype.slice.call(arguments))
+				};
+				var n = window.pintrk;
+				n.queue = [], n.version = "3.0";
+				var t = document.createElement("script");
+				t.async = !0, t.src = e;
+				var r = document.getElementsByTagName("script")[0];
+				r.parentNode.insertBefore(t, r)
+			}
+		}("https://s.pinimg.com/ct/core.js");
+
+		pintrk('load', '2617160657516');
+		pintrk('page');
+	</script>
+
+	<noscript>
+		<img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2617160657516&noscript=1" />
+	</noscript>
+
+	<script>
+		pintrk('track', 'pagevisit');
+	</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js" type="text/javascript"></script>
+	<script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js" type="text/javascript"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+	<script>
+		 
+		var config = {
+			apiKey: "AIzaSyB3NazIeORQkJsOKRIPN7c4DePpHgHKyCk",
+			authDomain: "vibe-apps.firebaseapp.com",
+			databaseURL: "https://vibe-apps.firebaseio.com",
+			projectId: "vibe-apps",
+			storageBucket: "vibe-apps.appspot.com",
+			messagingSenderId: "552217198259"
+		};
+		firebase.initializeApp(config);
+	</script>
+	<script src="/js/app.js" type="text/javascript"></script>
+	<script src="/js/user.svc.js" type="text/javascript"></script>
+	<script src="/js/account.ctrl.js" type="text/javascript"></script>
+
+	<noscript>
+		<img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2617160657516&event=pagevisit&noscript=1"
+		/>
+	</noscript>
+
+</head>
+
+<body ng-app="vibe" ng-controller="appCtrl" ng-cloak>
+
+
+
+
+    <!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<meta name="p:domain_verify" content="d3f33c2fef2e4e82bcfd395624327d38" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="Personalized Monthly Coffee, Cannabis &amp; Chocolate Subscription" />
+	<meta name="keywords" content="coffee, cannabis, chocolate, subscription" />
+
+	<title>Vibe LTD - Chocolate, Coffee, and Cannabis Monthly Subscription</title>
+
+	<link rel="stylesheet" href=/css/cssv.css />
+	<link rel="stylesheet" href=/css/cssvr.css />
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300, 600, 700" rel="stylesheet">
+
+	<link rel="icon" type="image/png" sizes="16x16" src=/img/favicon-16x16.png>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script defer type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+	<script>
+		$(document).ready(function() {
+
+
+			$('.accordionButton').click(function() {
+
+
+				$('.accordionButton').removeClass('on');
+
+
+				$('.accordionContent').slideUp('normal');
+
+
+				if ($(this).next().is(':hidden') == true) {
+
+					
+					$(this).addClass('on');
+
+					
+					$(this).next().slideDown('normal');
+				}
+
+			});
+
+
+
+			$('.accordionButton').mouseover(function() {
+				$(this).addClass('over');
+
+
+			}).mouseout(function() {
+				$(this).removeClass('over');
+			});
+
+
+			$('.accordionContent').hide();
+
+		});
+	</script>
+
+	<script>
+		$(document).ready(function() {
+			$('a[rel="relativeanchor"]').click(function() {
+				$('html, body').animate({
+					scrollTop: $($.attr(this, 'href')).offset().top
+				}, 500);
+				return false;
+			});
+		});
+	</script>
+
+	<script type="text/javascript">
+		! function(e) {
+			if (!window.pintrk) {
+				window.pintrk = function() {
+					window.pintrk.queue.push(Array.prototype.slice.call(arguments))
+				};
+				var n = window.pintrk;
+				n.queue = [], n.version = "3.0";
+				var t = document.createElement("script");
+				t.async = !0, t.src = e;
+				var r = document.getElementsByTagName("script")[0];
+				r.parentNode.insertBefore(t, r)
+			}
+		}("https://s.pinimg.com/ct/core.js");
+
+		pintrk('load', '2617160657516');
+		pintrk('page');
+	</script>
+
+	<noscript>
+		<img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2617160657516&noscript=1" />
+	</noscript>
+
+	<script>
+		pintrk('track', 'pagevisit');
+	</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js" type="text/javascript"></script>
+	<script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js" type="text/javascript"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+	<script>
+		 
+		var config = {
+			apiKey: "AIzaSyB3NazIeORQkJsOKRIPN7c4DePpHgHKyCk",
+			authDomain: "vibe-apps.firebaseapp.com",
+			databaseURL: "https://vibe-apps.firebaseio.com",
+			projectId: "vibe-apps",
+			storageBucket: "vibe-apps.appspot.com",
+			messagingSenderId: "552217198259"
+		};
+		firebase.initializeApp(config);
+	</script>
+	<script src="/js/app.js" type="text/javascript"></script>
+	<script src="/js/user.svc.js" type="text/javascript"></script>
+	<script src="/js/account.ctrl.js" type="text/javascript"></script>
+
+	<noscript>
+		<img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2617160657516&event=pagevisit&noscript=1"
+		/>
+	</noscript>
+
+</head>
+
+<body ng-app="vibe" ng-controller="appCtrl" ng-cloak>
+
+
+<div class="headerAccount">
+
+    <div class="header1">
+        <a href="/"><img class="logo1" src=/img/vlogo.png></a>
+    </div>
+
+    <div class="header2">
+        <a class="logout" href="" ng-click="logout()">Logout</a><br>
+    </div>
+
+</div> 
+
+<div class="accountBody">
+    <div class="account">
+        <div class="sidebar">
+            <h2>Account</h2>
+            <p>Your Vibe ID is used to login.</p>
+        </div>
+
+        <ng-form class="accountForm">
+            <p>Name</p>
+            <input type="text" placeholder="Jane Doe" required class="input" ng-model="user.name">
+            <p>Email</p>
+            <input type="text" placeholder="example@email.com" required class="input" ng-model="user.email">
+        </ng-form>
+
+    </div>
+
+    <div class="subscription">
+        <div class="sidebar">
+            <h2>Subscription & Billing</h2>
+            <p>Manage your Vibe subscription and payment method.</p>
+        </div>
+
+
+        <div class="subForm">
+            <ng-form class="ship">
+                <h4>Delivery Address</h4>
+                <p>Address Line 1</p>
+                <input type="text" placeholder="1234 Pleasent St" required class="input" ng-model="user.delivery.address[0]">
+                <p>Address Line 2</p>
+                <input type="text" placeholder="Apt. 1" required class="input" ng-model="user.delivery.address[1]">
+                <p>City</p>
+                <input type="text" placeholder="San Francisco" required class="input" ng-model="user.delivery.city">
+                <span>
+                    <div>
+                        <p>State</p>
+                        <input type="text" placeholder="CA" required class="input" ng-model="user.delivery.state">
+                    </div>
+                    <div>
+                        <p>Zip Code</p>
+                        <input type="text" placeholder="12345" required class="input" ng-model="user.delivery.zipcode">
+                    </div>
+                </span>
+                </form>
+
+                <ng-form>
+                    <h4>Billing Address</h4>
+                    <p>Address Line 1</p>
+                    <input type="text" placeholder="1234 Pleasent St" required class="input" ng-model="user.billing.address[0]">
+                    <p>Address Line 2</p>
+                    <input type="text" placeholder="Apt. 1" required class="input" ng-model="user.billing.address[1]">
+                    <p>City</p>
+                    <input type="text" placeholder="San Francisco" required class="input" ng-model="user.billing.city">
+                    <span>
+                        <div>
+                            <p>State</p>
+                            <input type="text" placeholder="CA" required class="input" ng-model="user.billing.state">
+                        </div>
+                        <div>
+                            <p>Zip Code</p>
+                            <input type="text" placeholder="12345" required class="input" ng-model="user.billing.zipcode">
+                        </div>
+                    </span>
+                </ng-form>
+
+                <form class="pay" action="/" method="post">
+                    <h4>Payment Method</h4>
+                    <p>Full Name</p>
+                    <input type="text" placeholder="First & Last Name" required class="input">
+                    <p>Card Number</p>
+                    <input type="text" placeholder="4012 8888 8888 1881" required class="input">
+                    <span>
+                    <div>
+                        <p>Expiration Date</p>
+                        <input type="text" placeholder="12/20" required class="input">
+                    </div>
+                    <div>
+                        <p>Security Code</p>
+                        <input type="text" placeholder="123" required class="input">
+                    </div>
+                    </span>
+                </form>
+
+                <ng-form>
+                    <p>Promo Code</p>
+                    <input type="text" placeholder="Enter Promo Code" required class="input" ng-model="user.promoCode">
+                </ng-form>
+
+                <div class="subOptions">
+                    <button class="subButton" ng-if="!user.subscription" ng-click="user.subscription=true">
+                    <p class="left">Activate Subscription</p>
+                </button>
+
+                <button class="subButton" ng-if="user.subscription" ng-click="user.subscription=false">
+                <p class="left">Pause Subscription</p>
+                </button>
+                </div>
+
+        </div>
+
+    </div>
+
+    <div class="update">
+        <button class="finalButton" ng-click="cancel()">Cancel</button>
+        <button class="finalButton" ng-click="save()">Update</button>
+    </div>
+
+</div>
+
+
+
+        
+
+        <div class="spaceBottom2"></div>
+        <div class="footer">
+
+            <div>
+            <img class="footerLogo" src=/img/vlogo.png><br>  
+            </div>
+            
+            <a class="footerLink" href="/frequently-asked-questions">| FAQ + CONTACT |</a>
+            <div class="divider">
+                <div class="social-footer">
+                    <a href="http://www.facebook.com/vibeltd"><img class="fb2" src=/img/vfb.png></a>
+                    <a href="http://www.twitter.com/vibeltd"><img class="twitter2" src=/img/vtwitter.png></a>
+                    <a href="http://www.instagram.com/vibeltd"><img class="insta2" src=/img/vinsta.png></a>
+                    <a href="https://www.pinterest.com/vibeltd/"><img class="pin2" src=/img/vpin.png></a>
+                </div>
+            </div>
+            <div class="copyright">Copyright &copy Vibe LTD. All Rights reserved.</div>
+        </div>
+
+    </body>
+</html>
