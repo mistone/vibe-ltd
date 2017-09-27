@@ -1,8 +1,11 @@
 /* global angular, firebase */
 
-var app = angular.module('vibe', ['firebase']);
+var app = angular.module('vibe', ['firebase','ngRoute']);
 
-app.config(['$locationProvider', function($locationProvider) {
+app.config(['$locationProvider','$routeProvider', function($locationProvider, $routeProvider) {
+    $routeProvider.when('', {
+        template: ''
+    });
     $locationProvider.html5Mode({
         enabled: true,
         requireBase: false
