@@ -13,7 +13,6 @@
 	<link rel="stylesheet" href={{ if eq $.Params.title "PRIVACY POLICY" }}{{ "/css/privacy.css" | relURL }}{{ else }}{{ "/css/cssv.css" | relURL }}{{ end }} />
 	<link rel="stylesheet" href={{ if eq $.Params.title "PRIVACY POLICY" }}{{ "/css/privacyr.css" | relURL }}{{ else }}{{ "/css/cssvr.css" | relURL }}{{ end }} />
 
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
@@ -22,46 +21,6 @@
 	<link rel="icon" type="image/png" sizes="16x16" src={{ "/img/favicon-16x16.png" | relURL }}>
 
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
-
-		<!-- Initialization Snippet for Firebase App -->
-	<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
-	<script>
-	// Initialize Firebase
-	var config = {
-		apiKey: "AIzaSyB3NazIeORQkJsOKRIPN7c4DePpHgHKyCk",
-		authDomain: "vibe-apps.firebaseapp.com",
-		databaseURL: "https://vibe-apps.firebaseio.com",
-		projectId: "vibe-apps",
-		storageBucket: "vibe-apps.appspot.com",
-		messagingSenderId: "552217198259"
-	};
-	firebase.initializeApp(config);
-	</script>
-
-	<!-- Initialization for Signin Widget for Firebase App -->
-	<script src="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.js"></script>
-	<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.css" />
-	<script type="text/javascript">
-		// FirebaseUI config.
-		var uiConfig = {
-		signInSuccessUrl: 'https://vibeltd.co/account/',
-		signInOptions: [
-			// Leave the lines as is for the providers you want to offer your users.
-			firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-			firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-			firebase.auth.EmailAuthProvider.PROVIDER_ID
-		],
-		// Terms of service url.
-		tosUrl: '<your-tos-url>'
-		};
-
-		// Initialize the FirebaseUI Widget using Firebase.
-		var ui = new firebaseui.auth.AuthUI(firebase.auth());
-		// The start method will wait until the DOM is loaded.
-		ui.start('#firebaseui-auth-container', uiConfig);
-	</script>	
-
 
 	<script>
 		$(document).ready(function() {
@@ -168,5 +127,5 @@
 
 </head>
 
-<body ng-app="vibe" ng-cloak>
+<body ng-app="vibe" ng-controller="appCtrl" ng-cloak>
 	
