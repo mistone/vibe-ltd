@@ -6,6 +6,8 @@
 
 {{ if eq $.Params.title "" }}
     {{ partial "account.html" . }}
+{{ else if eq $.Params.title "Welcome to My Awesome App" }}
+    {{ partial "signin.html" . }}
 {{ else }}
     {{ partial "header.html" . }}
     <div class="heroD">
