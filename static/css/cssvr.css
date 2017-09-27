@@ -226,7 +226,6 @@ margin-bottom:20px;
     padding-bottom:70px; 
     padding-left:40px;
     padding-right:40px; 
-    vertical-align: top;
     text-align:left;
     background-color:rgba(241, 241, 241, 0.95);
     border-right:0px solid #fff;
@@ -244,7 +243,6 @@ border-right:0px solid #fff;
     padding-bottom:70px;  
         padding-left:40px;
     padding-right:40px; 
-    vertical-align: top;
     text-align:left;
         background-color:rgba(241, 241, 241, 0.95);
     background-image:url(/img/vline.jpg);
@@ -262,7 +260,6 @@ border-right:0px solid #fff;
     padding-bottom:70px;  
         padding-left:40px;
     padding-right:40px; 
-    vertical-align: top;
     text-align:left;
     border-left:0px solid #fff;
         background-color:rgba(241, 241, 241, 0.95);
@@ -450,16 +447,16 @@ font-family: 'Open Sans', sans-serif;
 
 
 .submitButton{
-background-color: #000;
+    background-color: #000;
     margin: 0 auto;
     display: inline-block;
     text-align: center;
     color: #fff;
-font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     letter-spacing: 2px;
     padding: 22px 50px 22px 50px;
--webkit-appearance: none;
+    -webkit-appearance: none;
     font-size: 12px;
     MARGIN-TOP:20PX;
     border:none;
@@ -478,6 +475,10 @@ margin-top:60px;
 
 
 @media only screen and (max-width: 650px) {
+
+    .firebaseui-auth-header {
+        font-size: 1.5rem;
+    }
 
     .account {
         margin: 60px 10px 0;
@@ -547,8 +548,9 @@ margin-top:60px;
     }
 
     .update {
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-column-gap: 10px;
     }
 
     .finalButton {
@@ -566,6 +568,7 @@ margin-top:60px;
     }
 
     .subButton {
+        margin: 20px 0 0;
         font-size: 12px;
         letter-spacing: 2px;
         font-weight: 600;

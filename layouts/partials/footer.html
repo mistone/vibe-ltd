@@ -7,7 +7,9 @@
             <img class="footerLogo" src={{ "/img/vlogo.png" | relURL }}><br>  
             </div>
             <div>
-                <!-- <a class="footerLink" href="/signin">SignUp / LogIn</a> -->
+                <a href="/signin" class="footerLink" ng-if="!auth.uid">Signup / Login</a>
+                <a href="/account" class="footerLink" ng-if="auth.uid">My Account</a>
+                <a href="" class="footerLink" ng-click="logout()" ng-if="auth.uid">Logout</a>
             </div>
             <a class="footerLink" href="/frequently-asked-questions">| FAQ + CONTACT |</a>
             <div class="divider">

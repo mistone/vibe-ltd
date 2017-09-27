@@ -21,9 +21,11 @@
 
         <ng-form class="accountForm">
             <p>Name</p>
-            <input type="text" placeholder="Jane Doe" required class="input" ng-model="user.name">
+            <input type="text" placeholder="First & Last Name" required class="input" ng-model="user.name">
             <p>Email</p>
-            <input type="text" placeholder="example@email.com" required class="input" ng-model="auth.email">
+            <input type="email" placeholder="example@email.com" required class="input" ng-model="auth.email">
+            <p>Password</p>
+            <input type="password" placeholder="password" required class="input" ng-model="auth.password">
         </ng-form>
 
     </div>
@@ -40,10 +42,16 @@
                 <h4>Delivery Address</h4>
                 <p>Address Line 1</p>
                 <input type="text" placeholder="1234 Pleasent St" required class="input" ng-model="user.delivery.address[0]">
-                <p>Address Line 2</p>
-                <input type="text" placeholder="Apt. 1" required class="input" ng-model="user.delivery.address[1]">
-                <p>City</p>
-                <input type="text" placeholder="San Francisco" required class="input" ng-model="user.delivery.city">
+                <span>
+                    <div>
+                        <p>Address Line 2</p>
+                        <input type="text" placeholder="Apt. 1" required class="input" ng-model="user.delivery.address[1]">
+                    </div>
+                    <div>
+                        <p>City</p>
+                        <input type="text" placeholder="San Francisco" required class="input" ng-model="user.delivery.city">
+                    </div>
+                </span>
                 <span>
                     <div>
                         <p>State</p>
@@ -51,27 +59,33 @@
                     </div>
                     <div>
                         <p>Zip Code</p>
-                        <input type="text" placeholder="12345" required class="input" ng-model="user.delivery.zipcode">
+                        <input type="number" min="00000" max="99999" placeholder="12345" required class="input" ng-model="user.delivery.zipcode">
                     </div>
                 </span>
                 </form>
 
-                <ng-form>
+                <ng-form class="bill">
                     <h4>Billing Address</h4>
                     <p>Address Line 1</p>
                     <input type="text" placeholder="1234 Pleasent St" required class="input" ng-model="user.billing.address[0]">
-                    <p>Address Line 2</p>
-                    <input type="text" placeholder="Apt. 1" required class="input" ng-model="user.billing.address[1]">
-                    <p>City</p>
-                    <input type="text" placeholder="San Francisco" required class="input" ng-model="user.billing.city">
                     <span>
+                        <div>
+                            <p>Address Line 2</p>
+                            <input type="text" placeholder="Apt. 1" required class="input" ng-model="user.billing.address[1]">
+                        </div>
+                        <div>
+                           <p>City</p>
+                            <input type="text" placeholder="San Francisco" required class="input" ng-model="user.billing.city"> 
+                        </div>
+                    <!-- </span>
+                    <span> -->
                         <div>
                             <p>State</p>
                             <input type="text" placeholder="CA" required class="input" ng-model="user.billing.state">
                         </div>
                         <div>
                             <p>Zip Code</p>
-                            <input type="text" placeholder="12345" required class="input" ng-model="user.billing.zipcode">
+                            <input type="number" min="00000" max="99999" placeholder="12345" required class="input" ng-model="user.billing.zipcode">
                         </div>
                     </span>
                 </ng-form>
@@ -81,16 +95,16 @@
                     <p>Full Name</p>
                     <input type="text" placeholder="First & Last Name" required class="input">
                     <p>Card Number</p>
-                    <input type="text" placeholder="4012 8888 8888 1881" required class="input">
+                    <input type="number" placeholder="4012 8888 8888 1881" required class="input">
                     <span>
-                    <div>
-                        <p>Expiration Date</p>
-                        <input type="text" placeholder="12/20" required class="input">
-                    </div>
-                    <div>
-                        <p>Security Code</p>
-                        <input type="text" placeholder="123" required class="input">
-                    </div>
+                        <div>
+                            <p>Expiration Date</p>
+                            <input type="text" placeholder="12/20" required class="input">
+                        </div>
+                        <div>
+                            <p>Security Code</p>
+                            <input type="number" placeholder="123" required class="input">
+                        </div>
                     </span>
                 </form>
 
@@ -99,14 +113,27 @@
                     <input type="text" placeholder="Enter Promo Code" required class="input" ng-model="user.promoCode">
                 </ng-form>
 
+                <!-- <ul class="subOptions">
+                    <li>
+                        <input type="radio" class="subButton" name="selector" ng-if="!user.subscription" ng-click="user.subscription=true">
+                        <label class="left" for="subButton">Activate Subscription</label>
+                        <div class="check"></div>
+                    </li>
+                    <li>
+                        <input type="radio" class="subButton" name="selector" ng-if="user.subscription" ng-click="user.subscription=false">
+                        <label class="right" for="subButton">Pause Subscription</label>
+                        <div class="check"></div>
+                    </li>
+                </ul> -->
+
                 <div class="subOptions">
                     <button class="subButton" ng-if="!user.subscription" ng-click="user.subscription=true">
-                    <p class="left">Activate Subscription</p>
-                </button>
+                        <p class="left">Activate Subscription</p>
+                    </button>
 
-                <button class="subButton" ng-if="user.subscription" ng-click="user.subscription=false">
-                <p class="left">Pause Subscription</p>
-                </button>
+                    <button class="subButton" ng-if="user.subscription" ng-click="user.subscription=false">
+                        <p class="right">Pause Subscription</p>
+                    </button>
                 </div>
 
         </div>
@@ -114,8 +141,8 @@
     </div>
 
     <div class="update">
-        <button class="finalButton" ng-click="cancel()">Cancel</button>
-        <button class="finalButton" ng-click="save()">Update</button>
+        <button class="finalButton action-button animate" ng-click="cancel()">Cancel</button>
+        <button class="finalButton action-button animate" ng-click="save()">Update</button>
     </div>
 
 </div>

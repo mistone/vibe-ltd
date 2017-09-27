@@ -1,12 +1,8 @@
-{{ if eq $.Params.title "Thank You, You're Confirmed in the Vibe Beta" }}
-    {{ partial "head2.html" . }}
-{{ else }}
-    {{ partial "head.html" . }}
-{{ end }}
+{{ partial "head.html" . }}
 
 {{ if eq $.Params.title "" }}
     {{ partial "account.html" . }}
-{{ else if eq $.Params.title "Welcome to My Awesome App" }}
+{{ else if eq $.Params.title "Firebase App" }}
     {{ partial "signin.html" . }}
 {{ else }}
     {{ partial "header.html" . }}
