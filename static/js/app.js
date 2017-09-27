@@ -1,8 +1,8 @@
 /* global angular, firebase */
 
-var app = angular.module('vibe', ['firebase','ngRoute']);
+var app = angular.module('vibe', ['firebase', 'ngRoute']);
 
-app.config(['$locationProvider','$routeProvider', function($locationProvider, $routeProvider) {
+app.config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
     $locationProvider.html5Mode();
 }]);
 
@@ -10,13 +10,19 @@ app.controller('appCtrl', ['$scope', '$firebaseAuth', '$firebaseObject', '$windo
     function($scope, $firebaseAuth, $firebaseObject, $window) {
 
         $scope.auth = $firebaseAuth().$getAuth();
-        
+
         $firebaseAuth().$onAuthStateChanged(function(firebaseUser) {
             if (firebaseUser && firebaseUser.uid) {
                 $scope.auth = firebaseUser;
                 var ref = firebase.database().ref();
                 var data = ref.child('users').child($scope.auth.uid);
                 $scope.user = $firebaseObject(data);
+                $scope.user.$loaded(function(user) {
+                    if (!$scope.user.name) {
+                        $scope.user.name = $scope.auth.displayName.toString();
+                        $scope.user.$save();
+                    }
+                });
             }
             else {
                 if ($scope.user) {
