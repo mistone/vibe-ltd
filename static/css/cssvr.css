@@ -548,9 +548,8 @@ margin-top:60px;
     }
 
     .update {
-        display: grid;
-        grid-template-columns: 0.5fr 0.5fr;
-        grid-column-gap: 10px;
+        display: flex;
+        justify-content: center;
     }
 
     .finalButton {
