@@ -1096,7 +1096,7 @@ form p {
 }
 
 .subOptions {
-    margin: 0 0 60px 350px ;
+    margin: 0 0 10px 350px ;
 }
 
 .subButton {
@@ -1175,8 +1175,8 @@ form p {
     line-height: 25px;
 }
   
-  /* Code for checkboxes */
-.checkbox {
+/* Code for checkboxes */
+.radio {
     position: relative;
     width: 1rem;
     height: 1rem;
@@ -1184,87 +1184,96 @@ form p {
     cursor: pointer;
     -webkit-appearance: none;
        -moz-appearance: none;
+            appearance: none;
     outline: 0;
     vertical-align: middle;
-    /* 
-    Iterate over map and autogenerate helper classes. 
-    See "https://codepen.io/fxm90/pen/zGjjrJ" for an example 
+    /*
+    Iterate over map and autogenerate helper classes.
+    See "https://codepen.io/fxm90/pen/zGjjrJ" for an example
     */
 }
+.radio:before, .radio:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.radio:before {
+    z-index: 1;
+    border: 2px solid #f2f2f2;
+    -webkit-transition: border-color .3s ease-in-out;
+    transition: border-color .3s ease-in-out;
+}
+.radio:after {
+    z-index: 2;
+    border-radius: 50%;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+.radio:hover:after {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+}
+.radio:checked:after {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+}
+.radio--red:checked:before {
+    border-color: #f44336;
+}
+.radio--red:after {
+    background: #f44336;
+}
+.radio--green:checked:before {
+    border-color: #4caf50;
+}
+.radio--green:after {
+    background: #4caf50;
+}
+.radio--blue-grey:checked:before {
+    border-color: #607d8b;
+}
+.radio--blue-grey:after {
+    background: #607d8b;
+}
 
-.test {
+.active {
+    display: inline-block;
+}
+
+.pause {
     display: inline-block;
     max-width: 14%;
 }
 
 .month1, .month2, .month3 {
-    margin-bottom: 24px;
+    margin-bottom: 26px;
 }
 
 .month2, .month3 {
     margin-left: 20px;
 }
 
-.checkbox:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    border: 2px solid #f2f2f2;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-
-.checkbox:checked:before {
-    height: 50%;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    border-top-style: none;
-    border-right-style: none;
-}
-
-.checkbox--red {
+.radio--red {
     margin-left: 20px;
 }
 
-.checkbox--red:checked:before {
-    border-color: #f44336;
-}
-
-.checkbox--green:checked:before {
-    border-color: #4caf50;
-}
-
-.checkbox--blue-grey:checked:before {
-    border-color: #607d8b;
-  }
-
 /* Triggers */
-.trigger input[type="checkbox"]:checked  + .pause {
+.trigger input[type="radio"] + .msg {
     visibility: hidden;
     opacity: 0;
     -webkit-transition: visibility 0s linear 0.33s, opacity 0.33s linear;
     transition: visibility 0s linear 0.33s, opacity 0.33s linear;
 }
 
-.trigger input[type="checkbox"] + .pause {
-    visibility: visible;
-    opacity: 1;
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s;
-}
-
-.trigger span input[type="checkbox"] + .msg {
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: visibility 0s linear 0.33s, opacity 0.33s linear;
-    transition: visibility 0s linear 0.33s, opacity 0.33s linear;
-}
-
-.trigger span input[type="checkbox"]:checked + .msg {
+.trigger input[type="radio"]:checked + .msg {
     visibility: visible;
     opacity: 1;
     -webkit-transition-delay: 0s;
@@ -1275,7 +1284,6 @@ form p {
     display: block;
     margin: 0 auto;
     padding: 0 0 8px;
-    /* border: 1px solid #ddd; */
     border-radius: 3px;
 }
 

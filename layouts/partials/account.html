@@ -119,14 +119,12 @@
 
     <div class="subOptions">
         <label class="trigger">
-            <input type="checkbox" class="checkbox checkbox--green">Activate Subscription</input>
-            <span class="pause">
-                <input type="checkbox" class="checkbox checkbox--red">Pause Subscription</input>
-                <span class="msg">
-                    <input type="checkbox" class="checkbox checkbox--blue-grey month1"><p class="test">Pause for 1 month</p></input>
-                    <input type="checkbox" class="checkbox checkbox--blue-grey month2"><p class="test">Pause for 2 months</p></input>
-                    <input type="checkbox" class="checkbox checkbox--blue-grey month3"><p class="test">Pause for 3 months</p></input>
-                </span>
+            <input type="radio" name="subscription" value="active" checked="checked" class="radio radio--green active">Activate Subscription</input>
+            <input type="radio" name="subscription" value="paused" checked="checked" class="radio radio--red">Pause Subscription</input>
+            <span class="msg">
+                <input type="radio" name="months" value="one" class="radio radio--blue-grey month1" ><p class="pause">Pause for 1 month</p></input>
+                <input type="radio" name="months" value="two" class="radio radio--blue-grey month2" ><p class="pause">Pause for 2 months</p></input>
+                <input type="radio" name="months" value="three" class="radio radio--blue-grey month3" ><p class="pause">Pause for 3 months</p></input>
             </span>
         </label>
     </div>
