@@ -1261,10 +1261,6 @@ form p {
     margin-left: 20px;
 }
 
-.radio--red {
-    margin-left: 20px;
-}
-
 /* Triggers */
 .trigger input[type="radio"] + .msg {
     visibility: hidden;
