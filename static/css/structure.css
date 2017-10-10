@@ -1,0 +1,95 @@
+body {
+    text-align: center;
+    font-size: small;
+    font-family: "Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+}
+
+.authHead {
+    height: 30%;
+}
+
+article,
+aside,
+figure,
+figure img,
+figcaption,
+hgroup,
+footer,
+header,
+nav,
+section,
+video,
+object,
+output {
+    display: block;
+}
+
+#container {
+    text-align: left;
+    background: #fff;
+    border: 1 px solid#ccc;
+   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 px 0 px 5 px;
+   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 px 0 px 5 px;
+   -o-box-shadow: rgba(0, 0, 0, 0.2) 0 px 0 px 5 px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 px 0 px 5 px;
+}
+
+#container {
+    margin: 0 auto 10 px auto;
+    width: 640 px;
+}
+
+form.wufoo {
+    margin: 20 px 14 px 0 14 px;
+    padding: 0 0 20 px 0;
+    position: relative;
+}
+
+#logo {
+    margin: 0;
+    padding: 0;
+    min-height: 0;
+    background-color: #dedede;
+    text-indent: -9000 px;
+    text-decoration: none;
+}
+
+#logo a {
+    min-height: 40 px;
+    height: 40 px;
+    display: block;
+    background: url(../images/wflogo.png) no-repeat left top;
+    overflow: hidden;
+}
+
+* html#logo a {
+    background-image: none;
+    filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(src="../images/wflogo.png", sizingMethod="crop");
+}
+
+img,
+a img {
+    border: none;
+   -ms-interpolation-mode: bicubic;
+}
+
+.hide,
+.cloak div,
+.cloak span,
+.likert.cloak tbody,
+.likert.cloak thead {
+    display: none!important;
+}
+
+.likert.cloak table {
+    border: none;
+}
+
+
+/* @media only screen and (max-width: 590px), (min-width: 950px) {
+    
+        .authHead {
+            height: 45vh;
+        }
+
+} */

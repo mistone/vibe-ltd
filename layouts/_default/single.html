@@ -4,6 +4,8 @@
     {{ partial "account.html" . }}
 {{ else if eq $.Params.title "Firebase App" }}
     {{ partial "signin.html" . }}
+{{ else if eq $.Params.title "Subscription" }}
+    {{ partial "subscription.html" . }}
 {{ else }}
     {{ partial "header.html" . }}
     <div class="heroD">

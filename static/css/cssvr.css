@@ -1,5 +1,8 @@
 @media only screen and (max-width: 950px) {
 
+    .authHead {
+        height: 40vh;
+    }
 
 .introTextD{
     font-family: 'Open Sans', sans-serif;
@@ -475,6 +478,10 @@ margin-top:60px;
 
 
 @media only screen and (max-width: 650px) {
+
+    .authHead {
+        height: 45vh;
+    }
 
     .firebaseui-auth-header {
         font-size: 1.5rem;

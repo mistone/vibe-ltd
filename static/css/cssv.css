@@ -9,7 +9,7 @@ html {
 }
 
 input {
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
     -webkit-border-radius: 0;
     border-radius: 0
 }
@@ -1284,3 +1284,17 @@ form p {
 }
 
 /* End Pause/Activate Buttons */
+
+/* Sub Form */
+.ltr {
+    margin-top: 20px ;
+    display: grid;
+    grid-template-columns: [full-start] minmax(1em, 1fr)
+    [main-start] minmax(0, 40rem)
+    [main-end] minmax(1em, 1fr) [full-end];
+}
+
+.ltr > * {
+    grid-column: main;
+}
+/* End Sub Form */
