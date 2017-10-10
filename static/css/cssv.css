@@ -1285,7 +1285,7 @@ form p {
 /* End Pause/Activate Buttons */
 
 /* Sub Form */
-.ltr {
+#wufoo-z1un51nb0s6pks0 {
     margin-top: 20px ;
     display: grid;
     grid-template-columns: [full-start] minmax(1em, 1fr)
@@ -1293,7 +1293,7 @@ form p {
     [main-end] minmax(1em, 1fr) [full-end];
 }
 
-.ltr > * {
+#wufoo-z1un51nb0s6pks0 > * {
     grid-column: main;
 }
 /* End Sub Form */
