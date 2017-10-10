@@ -40,8 +40,7 @@ output {
 }
 
 form.wufoo {
-    margin: 20 px 14 px 0 14 px;
-    padding: 0 0 20 px 0;
+    padding: 0 0 20px;
     position: relative;
 }
 

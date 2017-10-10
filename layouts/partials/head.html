@@ -8,7 +8,14 @@
 	<meta name="description" content="{{ .Site.Params.meta.description }}" />
 	<meta name="keywords" content="{{ .Site.Params.meta.keywords }}" />
 
-	<title>Vibe LTD - Chocolate, Coffee, and Cannabis Monthly Subscription</title>
+	<title>
+		{{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+		{{ if eq $url "/" }}
+			{{ .Site.Title }}
+		{{ else }}
+			{{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}
+		{{ end }}
+	</title>
 
 	<!-- Normalize -->
 	<link rel="stylesheet" href={{ "/css/normalize.css" | relURL }} />

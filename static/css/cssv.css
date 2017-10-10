@@ -9,7 +9,6 @@ html {
 }
 
 input {
-    /* -webkit-appearance: none; */
     -webkit-border-radius: 0;
     border-radius: 0
 }
@@ -1290,7 +1289,7 @@ form p {
     margin-top: 20px ;
     display: grid;
     grid-template-columns: [full-start] minmax(1em, 1fr)
-    [main-start] minmax(0, 40rem)
+    [main-start] minmax(0, 34rem)
     [main-end] minmax(1em, 1fr) [full-end];
 }
 

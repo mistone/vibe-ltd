@@ -1,8 +1,8 @@
 {{ partial "head.html" . }}
 
-{{ if eq $.Params.title "" }}
+{{ if eq $.Params.title "Account" }}
     {{ partial "account.html" . }}
-{{ else if eq $.Params.title "Firebase App" }}
+{{ else if eq $.Params.title "Signin" }}
     {{ partial "signin.html" . }}
 {{ else if eq $.Params.title "Subscription" }}
     {{ partial "subscription.html" . }}
