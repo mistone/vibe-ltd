@@ -6,6 +6,13 @@
     {{ partial "signin.html" . }}
 {{ else if eq $.Params.title "Subscription" }}
     {{ partial "subscription.html" . }}
+{{ else if eq $.Params.title "Subscription Confirmation" }}
+    <div class="authHead plainHead">
+        {{ partial "header.html" . }}
+    </div>
+    <div class="confirmation">
+        Thank you for subscribing to the Vibe Beta
+    </div>
 {{ else }}
     {{ partial "header.html" . }}
     <div class="heroD">

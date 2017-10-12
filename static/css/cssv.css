@@ -861,6 +861,17 @@ animation-delay: 4s;
     }
 } 
 
+/* Confirmation Message */
+.confirmation {
+    font-family: 'Open Sans', sans-serif;
+    padding: 140px 10% 80px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+}
+/* End Confirmation Message */
 
 /* Start SingIn Page Layout */
 .authHead {

@@ -132,7 +132,16 @@
 		<!-- End Pintrest Pixel -->
 	{{ else }}
 	{{ end }}
-	<!-- Conditional Logic for Lead Pixels -->
+	<!-- End Lead Pixels -->
+
+	<!-- Subscription Confirmation Pixel -->
+	{{ if eq $.Params.title "Subscription Confirmation" }}
+		<script>
+			fbq('track', 'Purchase');
+		</script>
+	{{ else }}
+	{{ end }}
+	<!-- End Subscription Confirmation -->
 
 	<script>
 		$(document).ready(function() {
