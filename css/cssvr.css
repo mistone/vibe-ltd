@@ -1,3 +1,9 @@
+@media only screen and (min-width: 1024px) {
+    .headerSub {
+        padding: 0 250px;
+    }
+}
+
 @media only screen and (max-width: 950px) {
 
     .authHead {
@@ -482,6 +488,10 @@ margin-top:60px;
     .confirmation {
         padding: 60px 10% 0;
         font-size: 24px;
+    }
+    
+    .headerSub {
+        padding: 0 30px;
     }
 
     .authHead {
