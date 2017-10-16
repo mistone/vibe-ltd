@@ -29,19 +29,31 @@ body {
     justify-content: space-around;
     height: auto;
     width: 100%;
-  }
+}
   
 .headerCol1 {
     margin: 40px 0;
 }
   
-  .headerCol2 {
+.headerCol2 {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
     margin: 40px 0;
   }
+
+.headerSub {
+    display: flex;
+    justify-content: flex-start;
+    height: auto;
+    width: 100%;
+    padding: 0 140px;
+}
+
+.headerColumn {
+    margin: 40px 0;
+}
 
 .hero {
     width: 100%;
