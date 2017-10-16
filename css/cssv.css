@@ -29,7 +29,19 @@ body {
     justify-content: space-around;
     height: auto;
     width: 100%;
-  }
+ }
+
+.headerSub {
+    display: flex;
+    justify-content: flex-start;
+    height: auto;
+    width: 100%;
+    padding: 0 140px;
+}
+
+.headerColumn {
+    margin: 40px 0;
+}
   
 .headerCol1 {
     margin: 40px 0;
